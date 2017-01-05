@@ -1,6 +1,8 @@
 {
   "injectChanges": "true",
-  "files": ["./app/**/*.{html,htm,css,js}"],
+  "files": ["./app/**/*.{html,htm,css,js}", "./index.html"],
   "watchOptions": { "ignored": "node_modules" },
-  "server": { "baseDir": "./app" }
+  "server": {
+    "baseDir": "./"
+  }
 }

@@ -5,7 +5,7 @@ module.exports = {
   output: {
     path: __dirname + '/app/dist',
     filename: 'bundle.js',
-    publicPath: '/app/',
+    //publicPath: '/app/',
   },
   module: {
     preLoaders: [
