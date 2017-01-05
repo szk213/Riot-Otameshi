@@ -1,0 +1,35 @@
+{
+  "name": "otameshi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run lite\" \"npm run webpack\"",
+    "webpack": "webpack -w",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szk213/Riot-Otameshi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/szk213/Riot-Otameshi/issues"
+  },
+  "homepage": "https://github.com/szk213/Riot-Otameshi#readme",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015-riot": "^1.1.0",
+    "concurrently": "^3.1.0",
+    "lite-server": "^2.2.2",
+    "riot": "^3.0.5",
+    "riotjs-loader": "^3.0.0",
+    "webpack": "^1.14.0"
+  },
+  "dependencies": {
+    "riot-route": "^3.0.2"
+  }
+}
