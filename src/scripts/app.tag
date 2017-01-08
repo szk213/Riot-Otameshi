@@ -1,6 +1,7 @@
 import route from 'riot-route'
 import '../ui/side-menu'
 import '../ui/execution-order'
+import '../ui/home'
 
 <app>
   <section class="section">
@@ -16,11 +17,11 @@ import '../ui/execution-order'
     </div>
   </section>
   <script>
-  this.tagName = 'execution-order';
   route((tagName) => {
     console.log(tagName);
+    this.tagName = tagName;
+    this.update();
   });
-
   route.start();
   </script>
 </app>

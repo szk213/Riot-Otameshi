@@ -2712,14 +2712,19 @@
 
 	__webpack_require__(6);
 
+	__webpack_require__(8);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	riot.tag2('app', '<section class="section"> <div class="container"> <div class="columns"> <div class="column is-3"> <aside class="menu" data-is="side-menu"></aside> </div> <div column> <div class="content" data-is="{tagName}"></div> </div> </div> </div> </section>', '', '', function (opts) {
-	  this.tagName = 'execution-order';
+	  var _this = this;
+
+	  var self = this;
 	  (0, _riotRoute2.default)(function (tagName) {
 	    console.log(tagName);
+	    _this.tagName = tagName;
+	    _this.update();
 	  });
-
 	  _riotRoute2.default.start();
 	});
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -3220,7 +3225,7 @@
 	/* WEBPACK VAR INJECTION */(function(riot) {'use strict';
 
 	riot.tag2('side-menu', '<p class="menu-label"> Otameshi </p> <ul class="menu-list" each="{links}"> <li><a href="#{url}">{title}</a></li> </ul>', '', '', function (opts) {
-	  this.links = [{ title: '実行順序', tag: 'execution-order', url: 'execution-order' }];
+	  this.links = [{ title: 'HOME', tag: 'home', url: 'home' }, { title: '実行順序', tag: 'execution-order', url: 'execution-order' }];
 	});
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
@@ -3315,6 +3320,15 @@
 
 	  console.log('子 script');
 	});
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
+
+/***/ },
+/* 8 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(riot) {'use strict';
+
+	riot.tag2('home', '<div>HOMEだよ！</div>', '', '', function (opts) {});
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }

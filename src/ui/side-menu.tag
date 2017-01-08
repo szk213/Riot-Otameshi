@@ -7,6 +7,7 @@
   </ul>
   <script>
     this.links = [
+      {title: 'HOME', tag: 'home' , url: 'home'},
       {title: '実行順序', tag: 'execution-order' , url: 'execution-order'}
     ];
   </script>

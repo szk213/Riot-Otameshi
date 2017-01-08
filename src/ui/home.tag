@@ -1,3 +1,3 @@
 <home>
-    <a href="/execution-order">javascript実行順</a>
+    <div>HOMEだよ！</div>
 </home>
